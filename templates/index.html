@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{%block head%}
+<title>Employee Log</title>
+{%endblock%}
+
+{%block body%}
+<div class="content">
+    <table>
+    <tr>
+        <th>Employees</th>
+        <th>Added</th>
+        <th>Actions</th>
+    </tr>
+    {% for employee in employees%}
+    <tr>
+        <td>{{employee.name}}</td>
+        <td>{{employee.credentialID}}</td>
+        <td>{{employee.firstDay}}</td>
+        <td>
+            <a href="">Delete</a>
+            <br>
+            <a href="">Update</a>
+        </td>
+    </tr>
+    {% endfor %}
+    </table>
+    <form action="/" method="POST">
+        <input type="text" name="name" id="content">
+        <input type="submit" value="Insert Name">
+        <input type="text" name="credentials" id="credentials">
+        <input type="submit" value="Enter Credentials">
+    </form>
+</div>
+{% endblock %}

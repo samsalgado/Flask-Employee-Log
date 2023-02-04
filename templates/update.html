@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Employee Log</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+<h1 style="text-align: center">Update Employee List</h1>
+
+<div class="form">
+<form action="/update/{{task.id}}" method="POST">
+<input type="text" name="name" id="content" value="{{employee.name}}">
+<input type="text" name="credentials" id="credentials" value="{{employee.credentialID}}">
+<input type="submit" value="Update">
+</form>
+</div>
+</div>
+{% endblock %}

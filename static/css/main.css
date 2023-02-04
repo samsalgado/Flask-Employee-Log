@@ -1,0 +1,29 @@
+body, html{
+    margin:0;
+    font-family: sans-serif;
+}
+.content{
+    margin:0 auto;
+    width: 400px;
+}
+table, td, th {
+    border: 1px solid #ccc;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+th{
+    height: 30px;
+}
+td{
+    text-align: center;
+    padding: 5px;
+}
+h1{
+    text-align: center;
+}
+#name {
+    width: 70%;
+}
+
